@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraInsight | Global Intelligence Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="dashboard-grid">
+ 
+        <!-- Left: Search and details for the place you search -->
+        <div class="glass-panel search-card interactive-panel">
+            <div class="metric-group">
+                <div class="metric-label">Explore Destination</div>
+                <input type="text" id="country-search" class="search-input" placeholder="Type a country or place (e.g. Japan, Paris)..." />
+            </div>
+ 
+            <div class="country-info-box">
+                <div class="metric-group" style="margin-bottom: 12px;">
+                    <div class="metric-label">Active Focus</div>
+                    <div class="metric-value" id="location-name">Global View</div>
+                </div>
+                <div class="metric-group" style="margin-bottom: 0;">
+                    <div class="metric-label">Live Events & Travel Intel</div>
+                    <div style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.4;" id="event-description">
+                        Type any location above to load active cultural festivals, regional data streams, and resource ledgers.
+                    </div>
+                </div>
+                <div id="happening-now" style="margin-top: 14px;"></div>
+            </div>
+        </div>
+ 
+        <!-- Right: What is happening worldwide -->
+        <div class="glass-panel events-panel interactive-panel">
+            <div class="metric-label">Happening Now Worldwide</div>
+            <div id="world-feed"></div>
+        </div>
+ 
+    </div>
+ 
+    <!-- THREE.JS 3D LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+ 
+    <!-- JavaScript Application Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
